@@ -1,4 +1,4 @@
-title = "CodeCrusaders"
+title = "CodeCrusaders                              "
 baseURL = "https://blogger.technokoning.nl"
 
 # Option 1 (recommended): adding the theme as a Hugo module
@@ -83,7 +83,7 @@ disqusShortname = ""
     subtitle = "a blog with some code"
 
     # if you want to use libravatar or gravatar for the header image
-    avatarEmail = "code@lednerb.de"
+    avatarEmail = "djdavy@gmail.com"
 
     # set an path to the image file you want to use | overwrites avatar by email
     customImage = ""
