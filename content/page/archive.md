@@ -6,4 +6,5 @@ excludeFromTopNav: false
 
 # set the link if you want to redirect the user.
 link: "/archive/"
+weight: 5
 ---
