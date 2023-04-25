@@ -1,5 +1,5 @@
 title = "CodeCrusaders"
-baseURL = "https://blogger.technokoning.nl"
+baseURL = "https://blog.codecrusaders.nl"
 
 # Option 1 (recommended): adding the theme as a Hugo module
 # theme = "github.com/Lednerb/bilberry-hugo-theme/v3"
@@ -183,7 +183,7 @@ disqusShortname = ""
       unsafe = true
 
   [markup.tableOfContents]
-    endLevel = 5
+    endLevel = 3
     ordered = false
     startLevel = 2
 

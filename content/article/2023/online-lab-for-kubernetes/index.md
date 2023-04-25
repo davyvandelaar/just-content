@@ -1,15 +1,14 @@
 ---
 title: "Online Lab for Kubernetes"
 date: 2023-03-22T17:22:23+01:00
-draft: true
+draft: false
 
 categories:
-  - certification
-  - cloud native
-  - kubernetes
-  - vmware
+  - article
+  - devops
 tags:
   - cka
+  - certification
   - cloudnative
   - kubernetes
   - linuxfoundation

@@ -1,15 +1,13 @@
 ---
 title: Nsxt Powercli Export Loadbalancer
-date: 2023-03-22T17:28:44+01:00
+date: 2021-05-29T16:26:16+00:00
 draft: false
 
 categories:
+  - code
   - devops
-  - NSX
-  - powershell
-  - vmware
 tags:
-  - NSXT
+  - nsxt
   - powercli
   - powershell
   - vmware
@@ -29,7 +27,10 @@ Once connected things get interesting. This modules talks directly to the API an
 
 I want an overview of the available **loadbalancers** and connected **virtual servers**. So it makes sense that in this case my starting point would be the loadbalancer, right? Let&#8217;s give it a try. I am going to do a simple wildcard search on **loadbalancer**. This will produce a nice list.
 
-<pre class="wp-block-code"><code lang="powershell" class="language-powershell">PS D:\scripts&gt; Get-NsxtService *loadbalancer* 
+<details><summary>Show Code: Get-NsxtService *loadbalancer*</summary>
+
+```powershell {linenos=false}
+ D:\scripts > Get-NsxtService *loadbalancer* 
  Name
  com.vmware.nsx.loadbalancer.application_profiles
  com.vmware.nsx.loadbalancer.client_ssl_profiles
@@ -53,7 +54,12 @@ I want an overview of the available **loadbalancers** and connected **virtual se
  com.vmware.nsx.loadbalancer.virtual_servers
  com.vmware.nsx.repository.bundles.upload_allowed
  com.vmware.nsx.repository.bundles.upload_status
- com.vmware.nsx.upgrade.bundles.upload_status</code></pre>
+ com.vmware.nsx.upgrade.bundles.upload_status
+```
+
+ </details>
+ <br>
+ 
 
 #### Dive a little deeper
 
@@ -156,7 +162,3 @@ Ofcourse there are many options possible and routes to take. This code is focuss
 #### Conclusion
 
 In my <a href="https://www.codecrusaders.nl/vmware/tanzu/kubernetes-and-cloud-native-as-part-of-my-new-job/" target="_blank" rel="noreferrer noopener">previous blog post</a> I promised to write something technical about kubernetes, don&#8217;t worrry, that is still in the pipeline! This however came in between. I couldn&#8217;t find a whole lot on this on the internet and since I had good fun playing around with it I decided to make it a post. It&#8217;s a fun way to discover NSX-T with PowerCLIand I can recommend trying this out. Thanks for reading!
-
-<!-- LikeBtn.com BEGIN --><span class="likebtn-wrapper" data-identifier="post\_4547" data-site\_id="5ede12216fd08b0113e4e22b" data-dislike\_enabled="false" data-icon\_dislike\_show="false" data-style="" data-unlike\_allowed="" data-show\_copyright="" data-item\_url="https://www.codecrusaders.nl/vmware/nsx-t-with-powercli-export-loadbalancer-information/" data-item\_title="NSX T with PowerCLI - export loadbalancer information" data-item\_image="https://www.codecrusaders.nl/wp-content/uploads/2021/05/nsx.png" data-item\_date="2021-05-29T16:26:16+00:00" data-engine="WordPress" data-plugin\_v="2.6.47" data-prx="https://www.codecrusaders.nl/wp-admin/admin-ajax.php?action=likebtn\_prx" data-event\_handler="likebtn_eh" ></span>
-
-<!-- LikeBtn.com END -->
